@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/login.css" rel="stylesheet">
+    <title>Onboarding</title>
+</head>
+
+<body>
+    <section class="flex h-screen box-border">
+        <div class="w-[50%] h-screen box-border overflow-hidden">
+             <img class="mx-auto brightness-50" src="./images/login.png" alt="Your Company"> 
+        </div>
+       
+        <div class="flex items-start py-5 px-4 sm:px-6 lg:px-8 w-[50%] h-full">             
+            <div class="w-[380px] space-y-8 ml-12">
+                <div class="flex gap-1 items-center ">
+                    <div class="w-[13px]">
+                        <img src="./images/Icon open-home.png">
+                    </div>
+                    <p class="text-[#3880E2] text-xs">Go back home</p>
+                </div> 
+                <div class="space-y-5 ">
+                    <div class="space-y-5">
+                        <div>
+                            <img class="mx-auto h-[30px] w-[150px]" src="./images/logo.png" alt="Your Company">
+                        </div>
+                        <div class="flex flex-row">
+                            <p class="w-1/2 border-b-4 py-3 text-[#c6202f] font-bold text-center border-[#c6202f]">Login</p>
+                            <p class="w-1/2 border-b-2 py-3 text-[#a0a0a0] font-bold text-center "><a href="register.html">Register</a></p>
+                        </div>
+                    </div>
+                    <form class="space-y-7">
+                        <!-- <input type="hidden" name="remember" value="true"> -->
+                        <div class="space-y-5 rounded-md shadow-sm">
+                            <div class="space-y-3">
+                                <label for="email-address" class="text-[#a9a9a9]">Email address</label>
+                                <input id="email-address" name="email" type="email" autocomplete="email" required
+                                    class="relative block w-full appearance-none rounded-md border border-[#f3f3f3] px-3 py-2 text-gray-900 placeholder-[#f0f0f0] focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                    placeholder="xyz@samplemail.com">
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <label for="password" class="text-[#a9a9a9]">Password</label>
+                                    <div class="text-xs">
+                                        <a href="#" class="font-medium text-[#3880E2]">Forgot your
+                                            password?</a>
+                                    </div>
+                                </div>
+                                <div class="w-full relative h-[39px] flex items-center justify-end">
+                                    <input id="password" name="password" type="password" autocomplete="current-password"
+                                    required
+                                    class="absolute -z-10 block w-full appearance-none rounded-md border 
+                                    border-[#f3f3f3] px-3 py-2 text-gray-900 placeholder-[#f0f0f0] focus:z-10 
+                                    focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                    placeholder="***********************">
+                                    <img src="./images/Icon feather-eye.png" class="p-3 h-[38px] box-border">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-5">
+                            <button type="submit"
+                                class="group relative flex w-[48%] justify-center border border-transparent bg-[#d7b321] hover:bg-red-700 py-2 px-4 text-sm font-medium 
+                                text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+    
+                                Login
+                            </button>
+    
+                            <p class="text-sm text-[#a9a9a9] font-semibold mt-2 pt-1 mb-0">
+                                Interested in Trial version?
+                                <a href="#!"
+                                    class="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out">Click
+                                    here</a>
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

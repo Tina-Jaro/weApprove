@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/login.css" rel="stylesheet">
+    <title>Onboarding</title>
+</head>
+
+<body>
+    <section class="flex h-screen box-border">
+        <div class="w-[50%] h-screen box-border overflow-hidden">
+            <img class="mx-auto brightness-50" src="./images/login.png" alt="Your Company">
+        </div>
+
+        <div class="flex items-start py-5 px-4 sm:px-6 lg:px-8 w-[50%] h-full">
+            <div class="w-[430px] space-y-8 ml-12">
+                <div class="flex gap-1 items-center ">
+                    <div class="w-[13px]">
+                        <img src="./images/Icon open-home.png">
+                    </div>
+                    <p class="text-[#3880E2] text-xs">Go back home</p>
+                </div>
+                <div class="space-y-5 ">
+                    <div class="space-y-5">
+                        <div>
+                            <img class="mx-auto h-[30px] w-[150px]" src="./images/logo.png" alt="Your Company">
+                        </div>
+                        <div class="flex flex-row">
+                            <p class="w-1/2 border-b-2 py-3 text-[#a0a0a0] font-bold text-center "><a
+                                    href="login.html">Login</a></p>
+                            <p class="w-1/2 border-b-4 py-3 text-[#c6202f] font-bold text-center border-[#c6202f]"><a
+                                    href="register.html">Register</a></p>
+                        </div>
+                    </div>
+                    <form class="space-y-3">
+                        <!-- <input type="hidden" name="remember" value="true"> -->
+                        <div class="space-y-5 rounded-md shadow-sm">
+                            <div class="space-y-3">
+                                <label for="email-address" class="text-[#a9a9a9]">Company Name</label>
+                                <input id="email-address" name="email" type="email" autocomplete="email" required class="relative block w-full appearance-none rounded-md border border-[#f3f3f3] 
+                                    px-3 py-2 text-gray-900 placeholder-[#f0f0f0] focus:z-10 
+                                    focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                    placeholder="Enter the name of your company">
+                            </div>
+                            <div class="">
+                                <div class="flex flex-wrap -mx-3 mb-6">
+                                    <div class="space-y-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                        <label for="email-address" class="text-[#a9a9a9]">Email Address</label>
+                                        <input class="relative block w-full appearance-none rounded-md border border-[#f3f3f3] 
+                                        px-3 py-2 text-gray-900 placeholder-[#f0f0f0] focus:z-10 
+                                        focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                            type="text" s placeholder="xyz@samplemail.com" required>
+                                    </div>
+                                    <div class="space-y-3 w-full md:w-1/2 px-3">
+                                        <label for="phone-number" class="text-[#a9a9a9] ">Phone Number</label>
+                                        <input class="relative block w-full appearance-none rounded-md border border-[#f3f3f3] 
+                                        px-3 py-2 text-gray-900 placeholder-[#f0f0f0] focus:z-10 
+                                        focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                            type="text" placeholder="0***********">
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap -mx-3 mb-6">
+                                    <div class="space-y-3 w-full md:w-1/2 px-3 box-border">
+                                        <label for="phone-number" class="text-[#a9a9a9]">Password</label>
+                                        <div class=" relative box-border flex items-center justify-end w-full">
+                                            <input class=" w-full absolute justify-end -z-10 block  appearance-none rounded-md 
+                                        border border-[#f3f3f3] 
+                                        px-3 py-2 text-gray-900 placeholder-[#f0f0f0] focus:z-10 
+                                        focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                                type="text" placeholder="***********************">
+                                            <img src="./images/Icon feather-eye.png" class="p-3 h-[38px] box-border">
+                                        </div>
+                                    </div>
+                                    <div class="space-y-3 w-full md:w-1/2 px-3 box-border">
+                                        <label for="phone-number" class="text-[#a9a9a9]">Confirm Password</label>
+                                        <div class=" relative box-border flex items-center justify-end w-full">
+                                            <input class=" w-full absolute justify-end -z-10 block  appearance-none rounded-md 
+                                        border border-[#f3f3f3] 
+                                        px-3 py-2 text-gray-900 placeholder-[#f0f0f0] focus:z-10 
+                                        focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                                type="text" placeholder="***********************">
+                                            <img src="./images/Icon feather-eye.png" class="p-3 h-[38px] box-border">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <label for="password" class="text-[#a9a9a9]">Choose your departments </label>
+                            <div class="text-xs">
+                                <a href="#" class="font-medium text-[#3880E2]">+.Add Departments</a>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 border border-[#f3f3f3] py-4 px-4 items-center gap-2">
+                            <div class="flex flex-row">
+                                <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded 
+                                text-[#3880E2] focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 
+                                    dark:checked:bg-blue-500 dark:checked:border-gray-500 
+                                    dark:focus:ring-offset-gray-800" id="hs-checkbox-group-1">
+                                <label for="hs-checkbox-group-1" class="text-sm ml-3 text-[#a9a9a9]">Finance</label>
+                            </div>
+                            <div class="flex flex-row">
+                                <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 
+                                      focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 
+                                      dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                                    id="hs-checkbox-group-2">
+                                <label for="hs-checkbox-group-2" class="text-sm text-[#a9a9a9] ml-3">Production</label>
+                            </div>
+                            <div class="flex flex-row">
+                                <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 
+                                      dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 
+                                      dark:focus:ring-offset-gray-800" id="hs-checkbox-group-3">
+                                <label for="hs-checkbox-group-3" class="text-sm text-[#a9a9a9] ml-3 ">Audit</label>
+
+                            </div>
+
+                            <div class="flex flex-row">
+                                <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded 
+                                    text-blue-600 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 
+                                    dark:checked:bg-blue-500 dark:checked:border-blue-500 
+                                    dark:focus:ring-offset-gray-800" id="hs-checkbox-group-1">
+                                <label for="hs-checkbox-group-1" class="text-sm text-[#a9a9a9] ml-3">Human
+                                    Resource</label>
+                            </div>
+                            <div class="flex flex-row">
+                                <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 
+                                      focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 
+                                      dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                                    id="hs-checkbox-group-2">
+                                <label for="hs-checkbox-group-2" class="text-sm text-[#a9a9a9] ml-3">Research & <br>
+                                    Development</label>
+                            </div>
+                            <div class="flex flex-row">
+                                <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded focus:ring-gray-500 
+                                      dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-gray-500 dark:checked:border-gray-500 
+                                      dark:focus:ring-offset-gray-800" id="hs-checkbox-group-3">
+                                <label for="hs-checkbox-group-3" class="text-sm text-[#a9a9a9] ml-3">Purchasing</label>
+
+                            </div>
+
+
+                            <div class="flex flex-row">
+                                <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded 
+                                    text-blue-600 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 
+                                    dark:checked:bg-blue-500 dark:checked:border-blue-500 
+                                    dark:focus:ring-offset-gray-800" id="hs-checkbox-group-1">
+                                <label for="hs-checkbox-group-1" class="text-sm text-[#a9a9a9] ml-3">Sales</label>
+                            </div>
+                            <div class="flex flex-row">
+                                <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 
+                                      focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 
+                                      dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                                    id="hs-checkbox-group-2">
+                                <label for="hs-checkbox-group-2" class="text-sm text-[#a9a9a9] ml-3">Techincal</label>
+                            </div>
+
+                            <div class="flex flex-row">
+                                <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded 
+                                    text-blue-600 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 
+                                    dark:checked:bg-blue-500 dark:checked:border-blue-500 
+                                    dark:focus:ring-offset-gray-800" id="hs-checkbox-group-1">
+                                <label for="hs-checkbox-group-1" class="text-sm text-[#a9a9a9] ml-3">Maintenance</label>
+                            </div>
+                            <div class="flex flex-row">
+                                <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 
+                                      focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 
+                                      dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                                    id="hs-checkbox-group-2">
+                                <label for="hs-checkbox-group-2" class="text-sm text-[#a9a9a9] ml-3">Supply
+                                    Chain</label>
+                            </div>
+
+                        </div>
+
+                        <div class="space-y-5">
+                            <button type="submit" class="group relative flex w-[48%] justify-center 
+                            border border-transparent bg-[#d7b321] hover:bg-red-700 py-2 px-4 text-sm font-medium 
+                                text-white focus:outline-none ">
+                                Register
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
